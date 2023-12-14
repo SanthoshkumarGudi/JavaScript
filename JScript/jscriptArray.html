@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS array</title>
+    <script>
+        function array(){
+            //unlike java in jscript we can store heterogeneous data into the array 
+            //but in java we can store only homogeneous data
+            let arr=[10,"thirty",2,true,7.00];
+            // console.log(arr[0]);
+            // console.log(arr[1]);
+            // console.log(arr[2]);
+            // console.log(arr[3]);
+            // console.log(arr[4]);
+            for (let index = 0; index < arr.length; index++) {
+                const element = arr[index];
+                console.log(typeof(element));
+
+            }
+        }
+    </script>
+</head>
+
+<body onload="array()">
+    
+</body>
+</html>

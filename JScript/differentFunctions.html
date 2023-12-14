@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>functions in JS</title>
+    <script>
+        // funtion with no parameter and  no return type
+        function greet(){
+            console.log("good morning");
+
+        }
+        // funtion with no parameter and return type
+        function getPi(){
+            return 3.14
+        }
+        function getPiValue(){
+            let pi=getPi();
+            console.log(pi);
+        }
+        
+        // funtion with  parameter and  no return type
+        
+        function squareNumber(a){
+            console.log(a*a);
+
+        }
+
+        // funtion with  parameter and return type
+        function sum(a,b){
+
+        return a+b;
+        }
+
+        function adding(a,b){
+            let addition=sum(a,b);
+            console.log(addition);
+        }
+    </script>
+</head>
+<body>
+    <button onclick="greet()">greeting</button>
+    <br>
+    <button onclick="getPiValue()">getPi</button>
+    <br>
+    <button onclick="squareNumber(4)">squaring</button>
+    <br>
+    <button onclick="adding(2,1)">addition</button>
+    
+</body>
+</html>

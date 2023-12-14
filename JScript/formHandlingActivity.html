@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>activity</title>
+    <link rel="stylesheet" href="form.css">
+
+<script>
+    function validate1(){
+        let name=document.getElementById('name').value;
+        let age=document.getElementById('age').value;
+
+        if(name.length<5){
+            document.getElementById('target').innerHTML="name should be greter tan 5";
+        }
+        if(age<18){
+            document.getElementById('target').innerHTML="age should not be less than 18";
+
+        }
+
+    }
+</script>
+</head>
+<body>
+    <form class="forms" onsubmit="validate1(); return false;">
+        <label for="">enter name:</label>
+        <input type="text" id="name">
+        <br>
+        <label for="">enter age:</label>
+        <input type="number" id="age">
+        <br>
+        
+        <input type="submit" name="click">
+    </form>
+    <p id="target">
+
+    </p>
+    
+</body>
+</html>
